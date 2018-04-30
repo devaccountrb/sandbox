@@ -1,0 +1,600 @@
+<html>
+<head>
+  <!DOCTYPE html>
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="stylesheet" type="text/css" href="./styles/swiper.css">
+    <link rel="stylesheet" type="text/css" href="./styles/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./styles/magnific.css">
+   	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Online Shop Website</title>
+</head>
+
+
+<body>
+	<header class="header">
+		<section class="header__top">
+			<section class="container navbar">
+				<div class="navbar__tools tools">
+					<div class="tools__item">
+						<span class="tools__title select">Language</span>
+							<select class="select__list">
+							  <option value="English" class="select__item">English</option>
+							  <option value="German" class="select__item">German</option>
+							  <option value="Russian" class="select__item">Russian</option>
+							</select>
+					</div>
+					<div class="tools__item">
+						<span class="tools__title select">Curency</span>
+							<select class="select__list">
+							  <option value="English" class="select__item">USD</option>
+							  <option value="German" class="select__item">EURO</option>
+							  <option value="Russian" class="select__item">UAH</option>
+							</select>
+					</div>
+				</div>
+				<ul class="navbar__menu list">
+					<li class="list__item"><a class="list__link" href="#">Account</a></li>
+					<li class="list__item"><a class="list__link" href="#">Wishlist</a></li>
+					<li class="list__item"><a class="list__link" href="#">Checkout</a></li>
+					<li class="list__item"><a class="list__link" href="#">Log In</a></li>
+					<li class="list__item"><a class="list__link" href="#">Sign Up</a></li>
+				</ul>
+			</section>
+		</section>
+		<section class="header__bottom">
+			<section class="container container--header">
+				<div class="logo"></div>
+				<a href="#" class="menu-button">Меню</a>
+				<ul class="mainmenu">
+					<li class="mainmenu__item">Home</li>
+					<li class="mainmenu__item">women</li>
+					<li class="mainmenu__item">men</li>
+					<li class="mainmenu__item">other</li>
+					<li class="mainmenu__item">purchase</li>
+				</ul>
+					<div class="search-card">
+						<form class="search">
+						   <p><input type="search" name="q" placeholder="Поиск по сайту"> 
+						   <input type="submit" value="Найти"></p>
+						</form>
+						<div class="card">
+							<div class="card__btn card__btn--label"></div>
+							<div class="card__btn card__btn--backet"></div>
+							<span class="card_text">CART (0)</span>
+						</div>
+					</div>	
+			</section>
+		</section>
+	</header>
+	<main class="main">
+		<section class="banner">
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide banner__item--slide1 ">
+		      	<div class="banner__text">
+					<div class="banner__row banner__row--top">ALUMINUM CLUB</div>
+					<div class="banner__row banner__row--bottom">Experience Ray-Ban</div>
+				</div>
+		      </div>
+		      <div class="swiper-slide banner__item--slide2 ">
+		      	<div class="banner__text">
+					<div class="banner__row banner__row--top">Arrow CLUB</div>
+					<div class="banner__row banner__row--bottom">Experience in head</div>
+				</div>
+		      </div>
+		      <div class="swiper-slide banner__item--slide3 ">
+		      	<div class="banner__text">
+					<div class="banner__row banner__row--top">Macinarium CLUB</div>
+					<div class="banner__row banner__row--bottom">Experience in move</div>
+				</div>
+		      </div>
+		    </div>
+		    <div class="banner__nav">
+				<a class="banner__prew" href="#"></a>
+				<a class="banner__next" href="#"></a>
+			</div>
+		</section>
+		<section class="container container--products">
+			<div class="products">
+				<div class="products__title">Feftured products</div>
+				<div class="product-list product-list--featured">
+					<div class="product">
+						<a class="product__img" href="#" title="Описание фото товара">
+							<div class="product__stickers"></div>
+							<img class="product-image" src="./img/product/product4.jpg" alt="Alt фото товара" title="">
+						</a>
+						<div class="product__name">Power Pro Gainer</div>
+						<div class="product__footer">
+							<div class="price-wrapper">
+								<div class="price-old"></div>
+								<div class="price">2200 грн.</div>
+							</div>
+							<div class="rating">
+								<div class="rating-stars rating-stars--4"></div>
+							</div>
+						</div>
+						<div class="product__hover">
+							<div class="product__description">
+								<div class="property">
+									<div class="property__name">Объем:</div>
+									<div class="property__value">4000г</div>
+								</div>
+								<div class="property">
+									<div class="property__name">Порций:</div>
+									<div class="property__value">30</div>
+								</div>
+								<div class="property">
+									<div class="property__name">Вкус:</div>
+									<div class="property__value">Шоколад</div>
+								</div>
+							</div>
+							<div class="product__basket">
+								<div class="product__buy">Купить</div>
+								<div class="product__wishlist"></div>
+								<div class="product__compare"></div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<a class="product__img" href="#" title="Описание фото товара">
+							<div class="product__stickers product__stickers--sale"></div>
+							<img class="product-image" src="./img/product/product2.jpg" alt="Alt фото товара" title="">
+						</a>
+						<div class="product__name">Strongeit Brutto Gainer</div>
+						<div class="product__footer">
+							<div class="price-wrapper">
+								<div class="price-old">750 грн.</div>
+								<div class="price">500 грн.</div>
+							</div>
+							<div class="rating">
+								<div class="rating-stars rating-stars--2"></div>
+							</div>
+						</div>
+						<div class="product__hover">
+							<div class="product__description">
+								<div class="property">
+									<div class="property__name">Объем:</div>
+									<div class="property__value">500г</div>
+								</div>
+								<div class="property">
+									<div class="property__name">Порций:</div>
+									<div class="property__value">6</div>
+								</div>
+								<div class="property">
+									<div class="property__name">Вкус:</div>
+									<div class="property__value">Банан</div>
+								</div>
+							</div>
+							<div class="product__basket">
+								<div class="product__buy">Купить</div>
+								<div class="product__wishlist"></div>
+								<div class="product__compare"></div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<a class="product__img" href="#" title="Описание фото товара">
+							<div class="product__stickers"></div>
+							<img class="product-image" src="./img/product/product3.jpg" alt="Alt фото товара" title="">
+						</a>
+						<div class="product__name">X-Carbo</div>
+						<div class="product__footer">
+							<div class="price-wrapper">
+								<div class="price-old"></div>
+								<div class="price">1100 грн.</div>
+							</div>
+							<div class="rating">
+								<div class="rating-stars rating-stars--5"></div>
+							</div>
+						</div>
+						<div class="product__hover">
+							<div class="product__description">
+								<div class="property">
+									<div class="property__name">Объем:</div>
+									<div class="property__value">1000г</div>
+								</div>
+								<div class="property">
+									<div class="property__name">Порций:</div>
+									<div class="property__value">33</div>
+								</div>
+								<div class="property">
+									<div class="property__name">Вкус:</div>
+									<div class="property__value">Лемон</div>
+								</div>
+							</div>
+							<div class="product__basket">
+								<div class="product__buy">Купить</div>
+								<div class="product__wishlist"></div>
+								<div class="product__compare"></div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<a class="product__img" href="#" title="Описание фото товара">
+							<div class="product__stickers product__stickers--sale"></div>
+							<img class="product-image" src="./img/product/product1.jpg" alt="Alt фото товара" title="">
+						</a>
+						<div class="product__name">Mass Shoker</div>
+						<div class="product__footer">
+							<div class="price-wrapper">
+								<div class="price-old">1900 грн.</div>
+								<div class="price">1500 грн.</div>
+							</div>
+							<div class="rating">
+								<div class="rating-stars rating-stars--1"></div>
+							</div>
+						</div>
+						<div class="product__hover">
+							<div class="product__description">
+								<div class="property">
+									<div class="property__name">Объем:</div>
+									<div class="property__value">1000г</div>
+								</div>
+								<div class="property">
+									<div class="property__name">Порций:</div>
+									<div class="property__value">10</div>
+								</div>
+								<div class="property">
+									<div class="property__name">Вкус:</div>
+									<div class="property__value">Шоколад</div>
+								</div>
+							</div>
+							<div class="product__basket">
+								<div class="product__buy">Купить</div>
+								<div class="product__wishlist"></div>
+								<div class="product__compare"></div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<a class="product__img" href="#" title="Описание фото товара">
+							<div class="product__stickers"></div>
+							<img class="product-image" src="./img/product/product4.jpg" alt="Alt фото товара" title="">
+						</a>
+						<div class="product__name">Power Pro Gainer</div>
+						<div class="product__footer">
+							<div class="price-wrapper">
+								<div class="price-old"></div>
+								<div class="price">2200 грн.</div>
+							</div>
+							<div class="rating">
+								<div class="rating-stars rating-stars--4"></div>
+							</div>
+						</div>
+						<div class="product__hover">
+							<div class="product__description">
+								<div class="property">
+									<div class="property__name">Объем:</div>
+									<div class="property__value">4000г</div>
+								</div>
+								<div class="property">
+									<div class="property__name">Порций:</div>
+									<div class="property__value">30</div>
+								</div>
+								<div class="property">
+									<div class="property__name">Вкус:</div>
+									<div class="property__value">Шоколад</div>
+								</div>
+							</div>
+							<div class="product__basket">
+								<div class="product__buy">Купить</div>
+								<div class="product__wishlist"></div>
+								<div class="product__compare"></div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<a class="product__img" href="#" title="Описание фото товара">
+							<div class="product__stickers product__stickers--sale"></div>
+							<img class="product-image" src="./img/product/product2.jpg" alt="Alt фото товара" title="">
+						</a>
+						<div class="product__name">Strongeit Brutto Gainer</div>
+						<div class="product__footer">
+							<div class="price-wrapper">
+								<div class="price-old">750 грн.</div>
+								<div class="price">500 грн.</div>
+							</div>
+							<div class="rating">
+								<div class="rating-stars rating-stars--2"></div>
+							</div>
+						</div>
+						<div class="product__hover">
+							<div class="product__description">
+								<div class="property">
+									<div class="property__name">Объем:</div>
+									<div class="property__value">500г</div>
+								</div>
+								<div class="property">
+									<div class="property__name">Порций:</div>
+									<div class="property__value">6</div>
+								</div>
+								<div class="property">
+									<div class="property__name">Вкус:</div>
+									<div class="property__value">Банан</div>
+								</div>
+							</div>
+							<div class="product__basket">
+								<div class="product__buy">Купить</div>
+								<div class="product__wishlist"></div>
+								<div class="product__compare"></div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<a class="product__img" href="#" title="Описание фото товара">
+							<div class="product__stickers"></div>
+							<img class="product-image" src="./img/product/product3.jpg" alt="Alt фото товара" title="">
+						</a>
+						<div class="product__name">X-Carbo</div>
+						<div class="product__footer">
+							<div class="price-wrapper">
+								<div class="price-old"></div>
+								<div class="price">1100 грн.</div>
+							</div>
+							<div class="rating">
+								<div class="rating-stars rating-stars--5"></div>
+							</div>
+						</div>
+						<div class="product__hover">
+							<div class="product__description">
+								<div class="property">
+									<div class="property__name">Объем:</div>
+									<div class="property__value">1000г</div>
+								</div>
+								<div class="property">
+									<div class="property__name">Порций:</div>
+									<div class="property__value">33</div>
+								</div>
+								<div class="property">
+									<div class="property__name">Вкус:</div>
+									<div class="property__value">Лемон</div>
+								</div>
+							</div>
+							<div class="product__basket">
+								<div class="product__buy">Купить</div>
+								<div class="product__wishlist"></div>
+								<div class="product__compare"></div>
+							</div>
+						</div>
+					</div>	
+					<div class="product">
+						<a class="product__img" href="#" title="Описание фото товара">
+							<div class="product__stickers product__stickers--sale"></div>
+							<img class="product-image" src="./img/product/product1.jpg" alt="Alt фото товара" title="">
+						</a>
+						<div class="product__name">Mass Shoker</div>
+						<div class="product__footer">
+							<div class="price-wrapper">
+								<div class="price-old">1900 грн.</div>
+								<div class="price">1500 грн.</div>
+							</div>
+							<div class="rating">
+								<div class="rating-stars rating-stars--1"></div>
+							</div>
+						</div>
+						<div class="product__hover">
+							<div class="product__description">
+								<div class="property">
+									<div class="property__name">Объем:</div>
+									<div class="property__value">1000г</div>
+								</div>
+								<div class="property">
+									<div class="property__name">Порций:</div>
+									<div class="property__value">10</div>
+								</div>
+								<div class="property">
+									<div class="property__name">Вкус:</div>
+									<div class="property__value">Шоколад</div>
+								</div>
+							</div>
+							<div class="product__basket">
+								<div class="product__buy">Купить</div>
+								<div class="product__wishlist"></div>
+								<div class="product__compare"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<aside class="sidebar sidebar--stick">
+				<div class="sidebar__item item--banner">
+					<div class="item__title">Featured Glass</div>
+				    <div class="swiper-container">
+					    <div class="swiper-wrapper">
+					      <div class="swiper-slide" style="background-image:url(./img/aside_baner1.jpg)"></div>
+					      <div class="swiper-slide" style="background-image:url(./img/aside_baner2.jpg)"></div>
+					      <div class="swiper-slide" style="background-image:url(./img/aside_baner3.jpg)"></div>
+					    </div>
+					    <div class="swiper-pagination swiper-pagination1"></div>
+					</div>
+					<div class="item__button item__button--banner">Check it out</div>
+				</div>
+				<div class="sidebar__item item--subscribe">
+					<div class="item__title">newsletters signup</div>
+					<div class="item__description">Lorem ipsum dolor sit amen, dolor imun ra adlip </div>
+					<form class="subscribe_form" action="" method="post">
+						<input class="subscribe_form--input" type="text" name="email"  placeholder="Ваш e-mail">
+						<div class="subscribe_form--button item__button" type="submit">Подписаться</div>
+					</form>
+				</div>
+			</aside>
+		</section>
+	</main>
+	<aside class="sidebar sidebar--stick">
+				<div class="sidebar__item item--banner sidebar__item1">
+					<div class="item__title item__title1">Featured Glass</div>
+				    <div class="swiper-container swiper-container1">
+					    <div class="swiper-wrapper ">
+					      <div class="swiper-slide" style="background-image:url(./img/aside_baner23.jpg)"></div>
+					      <div class="swiper-slide" style="background-image:url(./img/aside_baner24.png)"></div>
+					      <div class="swiper-slide" style="background-image:url(./img/aside_baner25.png)"></div>
+					    </div>
+					    <div class="swiper-pagination"></div>
+					</div>
+					<div class="item__button item__button--banner">Check it out</div>
+				</div>
+			</aside>
+<footer class="footer">
+	<section class="footer__top infoline">
+		<div class="container infoline__list">
+			<div class="infoline__item">
+				<div class="infoline__icon infoline__icon--shipping"></div>
+				<div class="infoline__text">Free shipping on orders over $100</div>
+			</div>
+			<div class="infoline__item">
+				<div class="infoline__icon infoline__icon--tel"></div>
+				<div class="infoline__text">call us! toLl free- 409-8888-0099</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer__middle">
+		<div class="container footer-items">
+			<div class="footer-items__item">
+				<div class="footer-items__title">Facebook</div>
+				<div class="footer-items__content">
+					<div class="fb-members">100500 Members</div>
+					<div class="fb-like"></div>
+					<div class="fb-users">
+						<div class="fb-users__item fb-users__item--1"></div>
+						<div class="fb-users__item fb-users__item--1"></div>
+						<div class="fb-users__item fb-users__item--1"></div>
+						<div class="fb-users__item fb-users__item--1"></div>
+						<div class="fb-users__item fb-users__item--1"></div>
+						<div class="fb-users__item fb-users__item--1"></div>
+						<div class="fb-users__item fb-users__item--1"></div>
+						<div class="fb-users__item fb-users__item--1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-items__item">
+				<div class="footer-items__title">From Twitter</div>
+				<div class="footer-items__content">
+					<div class="tw-icon"></div>
+					<div class="tw-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</div>
+					<div class="tw-icon"></div>
+					<div class="tw-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</div>
+				</div>
+			</div>
+			<div class="footer-items__item">
+				<div class="footer-items__title">Information</div>
+				<div class="footer-items__content">
+					<div class="inf-link">Sed ultrices purus non.</div>
+					<div class="inf-link">sodales sodales.</div>
+					<div class="inf-link">Curabitur pretium dui vitae.</div>
+					<div class="inf-link">Donec gravida mi in nisl </div>
+					<div class="inf-link">faucibus leo condimentum.</div>
+					<div class="inf-link">Donec et lorem suscipit.</div>
+				</div>
+			</div>
+			<div class="footer-items__item">
+				<div class="footer-items__title">Call Us</div>
+				<div class="footer-items__content">
+					<div class="ct-item">Leo Store</div>
+					<div class="ct-item">Leopards media</div>
+					<div class="ct-item">KVM Rpad, 4590GH</div>
+					<div class="ct-item">+1 489-8888-0099</div>
+					<div class="ct-item">mail@email.com</div>
+					<div class="ct-socials">
+						<i class="google"></i>
+						<i class="ln"></i>
+						<i class="rss"></i>
+						<i class="fb"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer__bottom">
+		<section class="container footer-line">
+			<div class="copyright">© Copyright 2018 WEB, All Rights Reserved.</div>
+			<ul class="menu menu--footer">
+					<li class="menu__item"><a class="menu__link" href="#">About</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Delivery & Returns</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Terms & Conditions</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
+			</ul>
+		</section>
+	</section>
+</footer>
+
+
+
+
+
+
+
+
+
+<script src="./js/scripts.js" type="text/javascript"></script>
+<script src="./js/swiper.js" type="text/javascript"></script>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+<script src="./js/magnific.js" type="text/javascript"></script>
+<script>
+	jQuery(document).ready(function($) {
+	    $('.popup-content').magnificPopup({
+	        type: 'inline'
+	    });
+	});
+</script>
+  <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.banner', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 6500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.banner__next',
+        prevEl: '.banner__prew',
+      },
+    });
+  </script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'flip',
+      loop: true,
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      autoplay: {
+        delay: 6500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    var swiper = new Swiper('.swiper-container1', {
+      effect: 'flip',
+      loop: true,
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination1',
+      },
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+
+
+
+
+<div id="text-popup" class="white-popup mfp-hide"><p>HELLO!</p></div>
+<div id="toTop"></div>
+</body>
+</html>
