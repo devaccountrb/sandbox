@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
     <link rel="stylesheet" type="text/css" href="./styles/swiper.css">
     <link rel="stylesheet" type="text/css" href="./styles/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="./styles/hamburgers.css">
     <link rel="stylesheet" type="text/css" href="./styles/magnific.css">
    	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
  	<meta charset="utf-8">
@@ -46,7 +47,11 @@
 		<section class="header__bottom">
 			<section class="container container--header">
 				<div class="logo"></div>
-				<a href="#" class="menu-button">Меню</a>
+				<button class="hamburger hamburger--spring " type="button">
+				  <span class="hamburger-box">
+				    <span class="hamburger-inner"></span>
+				  </span>
+				</button>
 				<ul class="mainmenu">
 					<li class="mainmenu__item">Home</li>
 					<li class="mainmenu__item">women</li>
@@ -56,8 +61,8 @@
 				</ul>
 					<div class="search-card">
 						<form class="search">
-						   <p><input type="search" name="q" placeholder="Поиск по сайту"> 
-						   <input type="submit" value="Найти"></p>
+						   <input class="search__input" type="search" placeholder="search...">
+						   <input class="search__submit" type="submit" value="">
 						</form>
 						<div class="card">
 							<div class="card__btn card__btn--label"></div>
@@ -557,7 +562,7 @@
       },
     });
   </script>
-    <script>
+  <script>
     var swiper = new Swiper('.swiper-container', {
       effect: 'flip',
       loop: true,

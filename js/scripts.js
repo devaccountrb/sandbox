@@ -6,8 +6,8 @@ btn.onmousemove = function (e) {
   btn.style.setProperty('--y', y + 'px')
 }
 
-document.querySelector('.menu-button').onclick = function() {
-  document.querySelector('.menu-button').classList.toggle('menu-button--active');
+document.querySelector('.hamburger').onclick = function() {
+  document.querySelector('.hamburger').classList.toggle('is-active');
   document.querySelector('.mainmenu').classList.toggle('mainmenu--mobile');
 }
 
