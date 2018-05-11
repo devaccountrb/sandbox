@@ -18,20 +18,20 @@
 			<section class="container navbar">
 				<div class="navbar__tools tools">
 					<div class="tools__item">
-						<span class="tools__title select">Language</span>
-							<select class="select__list">
-							  <option value="English" class="select__item">English</option>
-							  <option value="German" class="select__item">German</option>
-							  <option value="Russian" class="select__item">Russian</option>
-							</select>
+						<span class="tools__title select">Language:</span>
+						<ul class="select__list"> 
+						  <li class="select__item active" data-lang="eng">eng</li>
+						  <li class="select__item" data-lang="рус">рус</li> 
+						  <li class="select__item" data-lang="укр">укр</li>
+						</ul>
 					</div>
 					<div class="tools__item">
 						<span class="tools__title select">Curency</span>
-							<select class="select__list">
-							  <option value="English" class="select__item">USD</option>
-							  <option value="German" class="select__item">EURO</option>
-							  <option value="Russian" class="select__item">UAH</option>
-							</select>
+						<ul class="select__list"> 
+						  <li class="select__item active" data-lang="usd">usd</li>
+						  <li class="select__item" data-lang="euro">euro</li> 
+						  <li class="select__item" data-lang="uah">uah</li>
+						</ul>
 					</div>
 				</div>
 				<ul class="navbar__menu list">
@@ -415,13 +415,14 @@
 					<div class="item__description">Lorem ipsum dolor sit amen, dolor imun ra adlip </div>
 					<form class="subscribe_form" action="" method="post">
 						<input class="subscribe_form--input" type="text" name="email"  placeholder="Ваш e-mail">
-						<button class="subscribe_form__button"><span class="gradient__text">Подписаться</span></button>
+						<!--<button class="subscribe_form__button"><span class="gradient__text">Подписаться</span></button>-->
 					</form>
 				</div>
 			</aside>
 		</section>
 	</main>
-	<aside class="sidebar sidebar--stick">
+	<button class="subscribe_form__button"><span class="gradient__text">Подписаться</span></button>
+	<aside class="sidebar">
 				<div class="sidebar__item item--banner sidebar__item1">
 					<div class="item__title item__title1">Featured Glass</div>
 				    <div class="swiper-container swiper-container1">
@@ -507,13 +508,13 @@
 	</section>
 	<section class="footer__bottom">
 		<section class="container footer-line">
-			<div class="copyright">© Copyright 2018 WEB, All Rights Reserved.</div>
 			<ul class="menu menu--footer">
 					<li class="menu__item"><a class="menu__link" href="#">About</a></li>
 					<li class="menu__item"><a class="menu__link" href="#">Delivery & Returns</a></li>
 					<li class="menu__item"><a class="menu__link" href="#">Terms & Conditions</a></li>
 					<li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
 			</ul>
+			<div class="copyright">© Copyright 2018 WEB, All Rights Reserved.</div>
 		</section>
 	</section>
 </footer>
@@ -526,11 +527,12 @@
 
 
 
-<script src="./js/scripts.js" type="text/javascript"></script>
+
 <script src="./js/swiper.js" type="text/javascript"></script>
 
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+<script src="./js/scripts.js" type="text/javascript"></script>
 <script src="./js/magnific.js" type="text/javascript"></script>
 <script>
 	jQuery(document).ready(function($) {

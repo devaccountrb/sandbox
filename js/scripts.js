@@ -11,4 +11,16 @@ document.querySelector('.menu-button').onclick = function() {
   document.querySelector('.mainmenu').classList.toggle('mainmenu--mobile');
 }
 
+/*BEGIN выпадающие меню верхнего блока*/
+$('.select__list').click(function(){
+$(this).toggleClass('open');
+})
 
+$('.select__item').click(function(){
+var setLang = $('.select__list').data('location'),
+    dataLangSelect = $(this).data('lang')
+      $('.select__list').data('location', dataLangSelect);
+      $('.select__item').removeClass('active');
+      $(this).toggleClass('active');
+})
+/*END выпадающие меню верхнего блока*/
