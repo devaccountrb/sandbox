@@ -10,7 +10,10 @@ document.querySelector('.hamburger').onclick = function() {
   document.querySelector('.hamburger').classList.toggle('is-active');
   document.querySelector('.mainmenu').classList.toggle('mainmenu--mobile');
 }
-
+document.querySelector('.hamburger2').onclick = function() {
+  document.querySelector('.hamburger2').classList.toggle('is-active2');
+  document.querySelector('.navbar__menu').classList.toggle('navbar__menu--mobile');
+}
 /*BEGIN выпадающие меню верхнего блока*/
 $('.select__list').click(function(){
 $(this).toggleClass('open');
@@ -24,3 +27,4 @@ var setLang = $('.select__list').data('location'),
       $(this).toggleClass('active');
 })
 /*END выпадающие меню верхнего блока*/
+

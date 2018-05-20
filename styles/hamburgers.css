@@ -5,6 +5,71 @@
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
+.hamburger2 {
+    padding: 4px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    margin: 0;
+    overflow: visible;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.hamburger2:before {
+    content: "\f007";
+    font-size: 20px;
+    font-family: fontawesome;
+    margin-right: 10px;
+}
+  @media (min-width: 700px) {
+    .hamburger2 {
+    display: none;
+  }
+}
+.hamburger2:hover {
+    opacity: 0.7;
+}
+.hamburger2:focus {
+    outline: none;
+}
+
+
+.hamburger-box2 {
+    width: 30px;
+    height: 12px;
+    display: inline-block;
+    position: relative; }
+
+.hamburger-inner2 {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner2, .hamburger-inner2::before, .hamburger-inner2::after {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner2::before, .hamburger-inner2::after {
+    content: "";
+    display: block; }
+  .hamburger-inner2::before {
+    top: -7px; }
+  .hamburger-inner2::after {
+    bottom: -7px; }
+
+
+
+/*---------------------------------------*/
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
@@ -21,7 +86,7 @@
   overflow: visible;
 }
 
-  @media (min-width: 680px) {
+  @media (min-width: 610px) {
     .hamburger {
     display: none;
   }
@@ -84,3 +149,10 @@
 
 /*
 
+/* Arrow Turn */
+.hamburger--arrowturn.is-active2 .hamburger-inner2 {
+  transform: rotate(-270deg); }
+  .hamburger--arrowturn.is-active2 .hamburger-inner2::before {
+    transform: translate3d(8px, 0, 0) rotate(45deg) scale(0.7, 1); }
+  .hamburger--arrowturn.is-active2 .hamburger-inner2::after {
+    transform: translate3d(8px, 0, 0) rotate(-45deg) scale(0.7, 1); }

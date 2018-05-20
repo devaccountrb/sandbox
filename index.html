@@ -1,14 +1,17 @@
 <html>
 <head>
   <!DOCTYPE html>
+    <!--<link rel="stylesheet" type="text/css" href="./styles/normalize.css">-->
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
     <link rel="stylesheet" type="text/css" href="./styles/swiper.css">
     <link rel="stylesheet" type="text/css" href="./styles/font-awesome.css">
-        <link rel="stylesheet" type="text/css" href="./styles/hamburgers.css">
+    <link rel="stylesheet" type="text/css" href="./styles/hamburgers.css">
     <link rel="stylesheet" type="text/css" href="./styles/magnific.css">
+    <link rel="stylesheet" type="text/css" href="./styles/pace.css">
    	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
  	<meta charset="utf-8">
  	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<meta name="theme-color" content="#4cb1ca">
   	<title>Online Shop Website</title>
 </head>
 
@@ -27,7 +30,7 @@
 						</ul>
 					</div>
 					<div class="tools__item">
-						<span class="tools__title select">Curency</span>
+						<span class="tools__title select">Curency:</span>
 						<ul class="select__list"> 
 						  <li class="select__item active" data-lang="usd">usd</li>
 						  <li class="select__item" data-lang="euro">euro</li> 
@@ -35,6 +38,18 @@
 						</ul>
 					</div>
 				</div>
+				<!--<ul class="select__list"> 
+					<li class="select__item"><a class="list__link" href="#">Account</a></li>
+					<li class="select__item"><a class="list__link" href="#">Wishlist</a></li>
+					<li class="select__item"><a class="list__link" href="#">Checkout</a></li>
+					<li class="select__item"><a class="list__link" href="#">Log In</a></li>
+					<li class="select__item"><a class="list__link" href="#">Sign Up</a></li>
+				</ul>-->
+				<button class="hamburger2 hamburger--arrowturn" type="button">
+				  <span class="hamburger-box2">
+				    <span class="hamburger-inner2"></span>
+				  </span>
+				</button>
 				<ul class="navbar__menu list">
 					<li class="list__item"><a class="list__link" href="#">Account</a></li>
 					<li class="list__item"><a class="list__link" href="#">Wishlist</a></li>
@@ -65,9 +80,13 @@
 						   <input class="search__submit" type="submit" value="">
 						</form>
 						<div class="card">
-							<div class="card__btn card__btn--label"></div>
-							<div class="card__btn card__btn--backet"></div>
-							<span class="card_text">CART (0)</span>
+							<a class="card__link" href="#">
+								<div class="card__btn card__btn--label"></div>
+							</a>
+							<a class="card__link" href="#">
+								<div class="card__btn card__btn--backet"></div>
+								<span class="card_text">CART (0)</span>
+							</a>
 						</div>
 					</div>	
 			</section>
@@ -102,11 +121,10 @@
 		</section>
 		<section class="container container--products">
 			<div class="products">
-				<div class="products__title">Feftured products</div>
+				<div class="products__title">Featured products</div>
 				<div class="product-list product-list--featured">
-					<div class="product">
+					<div class="product product--new">
 						<a class="product__img" href="#" title="Описание фото товара">
-							<div class="product__stickers"></div>
 							<img class="product-image" src="./img/product/product4.jpg" alt="Alt фото товара" title="">
 						</a>
 						<div class="product__name">Power Pro Gainer</div>
@@ -141,9 +159,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="product">
+					<div class="product product--sale">
 						<a class="product__img" href="#" title="Описание фото товара">
-							<div class="product__stickers product__stickers--sale"></div>
 							<img class="product-image" src="./img/product/product2.jpg" alt="Alt фото товара" title="">
 						</a>
 						<div class="product__name">Strongeit Brutto Gainer</div>
@@ -180,7 +197,6 @@
 					</div>
 					<div class="product">
 						<a class="product__img" href="#" title="Описание фото товара">
-							<div class="product__stickers"></div>
 							<img class="product-image" src="./img/product/product3.jpg" alt="Alt фото товара" title="">
 						</a>
 						<div class="product__name">X-Carbo</div>
@@ -215,9 +231,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="product">
+					<div class="product product--sale">
 						<a class="product__img" href="#" title="Описание фото товара">
-							<div class="product__stickers product__stickers--sale"></div>
 							<img class="product-image" src="./img/product/product1.jpg" alt="Alt фото товара" title="">
 						</a>
 						<div class="product__name">Mass Shoker</div>
@@ -254,7 +269,6 @@
 					</div>
 					<div class="product">
 						<a class="product__img" href="#" title="Описание фото товара">
-							<div class="product__stickers"></div>
 							<img class="product-image" src="./img/product/product4.jpg" alt="Alt фото товара" title="">
 						</a>
 						<div class="product__name">Power Pro Gainer</div>
@@ -289,9 +303,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="product">
+					<div class="product product--sale">
 						<a class="product__img" href="#" title="Описание фото товара">
-							<div class="product__stickers product__stickers--sale"></div>
 							<img class="product-image" src="./img/product/product2.jpg" alt="Alt фото товара" title="">
 						</a>
 						<div class="product__name">Strongeit Brutto Gainer</div>
@@ -328,7 +341,6 @@
 					</div>
 					<div class="product">
 						<a class="product__img" href="#" title="Описание фото товара">
-							<div class="product__stickers"></div>
 							<img class="product-image" src="./img/product/product3.jpg" alt="Alt фото товара" title="">
 						</a>
 						<div class="product__name">X-Carbo</div>
@@ -363,9 +375,8 @@
 							</div>
 						</div>
 					</div>	
-					<div class="product">
+					<div class="product product--sale">
 						<a class="product__img" href="#" title="Описание фото товара">
-							<div class="product__stickers product__stickers--sale"></div>
 							<img class="product-image" src="./img/product/product1.jpg" alt="Alt фото товара" title="">
 						</a>
 						<div class="product__name">Mass Shoker</div>
@@ -463,49 +474,53 @@
 					<div class="fb-like"></div>
 					<div class="fb-users">
 						<div class="fb-users__item fb-users__item--1"></div>
-						<div class="fb-users__item fb-users__item--1"></div>
-						<div class="fb-users__item fb-users__item--1"></div>
-						<div class="fb-users__item fb-users__item--1"></div>
-						<div class="fb-users__item fb-users__item--1"></div>
-						<div class="fb-users__item fb-users__item--1"></div>
-						<div class="fb-users__item fb-users__item--1"></div>
-						<div class="fb-users__item fb-users__item--1"></div>
+						<div class="fb-users__item fb-users__item--2"></div>
+						<div class="fb-users__item fb-users__item--3"></div>
+						<div class="fb-users__item fb-users__item--4"></div>
+						<div class="fb-users__item fb-users__item--5"></div>
+						<div class="fb-users__item fb-users__item--6"></div>
+						<div class="fb-users__item fb-users__item--7"></div>
+						<div class="fb-users__item fb-users__item--8"></div>
 					</div>
+					<span class="fb-text">Facebook social plugin</span>
 				</div>
 			</div>
 			<div class="footer-items__item">
 				<div class="footer-items__title">From Twitter</div>
 				<div class="footer-items__content">
-					<div class="tw-icon"></div>
-					<div class="tw-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</div>
-					<div class="tw-icon"></div>
-					<div class="tw-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</div>
+					<div class="twit">
+						<div class="twit__icon"><i class="fab fa-twitter"></i></div>
+						<div class="twit__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</div>
+					</div>
+					<div class="twit">
+						<div class="twit__icon"><i class="fab fa-twitter"></i></div>
+						<div class="twit__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</div>
+					</div>
 				</div>
 			</div>
 			<div class="footer-items__item">
 				<div class="footer-items__title">Information</div>
 				<div class="footer-items__content">
-					<div class="inf-link">Sed ultrices purus non.</div>
-					<div class="inf-link">sodales sodales.</div>
-					<div class="inf-link">Curabitur pretium dui vitae.</div>
-					<div class="inf-link">Donec gravida mi in nisl </div>
-					<div class="inf-link">faucibus leo condimentum.</div>
-					<div class="inf-link">Donec et lorem suscipit.</div>
+					<a class="inf-link" href="#">Sed ultrices purus non.</a>
+					<a class="inf-link" href="#">sodales sodales.</a>
+					<a class="inf-link" href="#">Curabitur pretium dui vitae.</a>
+					<a class="inf-link" href="#">Donec gravida mi in nisl </a>
+					<a class="inf-link" href="#">faucibus leo condimentum.</a>
+					<a class="inf-link" href="#">Donec et lorem suscipit.</a>
 				</div>
 			</div>
 			<div class="footer-items__item">
-				<div class="footer-items__title">Call Us</div>
+				<div class="footer-items__title">Contact</div>
 				<div class="footer-items__content">
-					<div class="ct-item">Leo Store</div>
-					<div class="ct-item">Leopards media</div>
-					<div class="ct-item">KVM Rpad, 4590GH</div>
-					<div class="ct-item">+1 489-8888-0099</div>
-					<div class="ct-item">mail@email.com</div>
+					<div class="ct-item"><i class="fa fa-map-marker"></i>KVM Rpad, 4590GH</div>
+					<div class="ct-item "><i class="fa fa-phone"></i><a class="ct-item__link" href="#">+38 (000) 00 00 000</a></div>
+					<div class="ct-item "><i class="fa fa-envelope"></i><a class="ct-item__link" href="#">mail@email.com</a></div>
 					<div class="ct-socials">
-						<i class="google"></i>
-						<i class="ln"></i>
-						<i class="rss"></i>
-						<i class="fb"></i>
+						<a class="fa fa-google-plus-square" href="#"></a>
+						<a class="fa fa-linkedin" href="#"></a>
+						<a class="fa fa-twitter-square" href="#"></a>
+						<a class="fa fa-rss-square" href="#"></a>
+						<a class="fa fa-facebook-square" href="#"></a>
 					</div>
 				</div>
 			</div>
@@ -534,7 +549,8 @@
 
 
 <script src="./js/swiper.js" type="text/javascript"></script>
-
+<script src="./js/pace.min.js" type="text/javascript"></script>
+<script src="./js/headroom.js" type="text/javascript"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
 <script src="./js/scripts.js" type="text/javascript"></script>
@@ -596,9 +612,6 @@
       },
     });
   </script>
-
-
-
 
 
 </body>
