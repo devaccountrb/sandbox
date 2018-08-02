@@ -18,15 +18,6 @@
   /* Fix of Webkit flickering */
   z-index: 1;
 }
-.swiper-container_ {
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
-  /* Fix of Webkit flickering */
-  z-index: 1;
-}
 .swiper-container-no-flexbox .swiper-slide {
   float: left;
 }
@@ -255,7 +246,8 @@
   display: none;
 }
 .swiper-pagination {
-  position: absolute;
+  position: absolute !important;
+  bottom: -85px;
   text-align: center;
   -webkit-transition: 300ms opacity;
   -o-transition: 300ms opacity;
@@ -267,6 +259,7 @@
 .swiper-pagination.swiper-pagination-hidden {
   opacity: 0;
 }
+
 /* Common Styles */
 .swiper-pagination-fraction,
 .swiper-pagination-custom,
@@ -338,7 +331,7 @@ button.swiper-pagination-bullet {
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #007aff;
+  background: var(--main);
 }
 .swiper-container-vertical > .swiper-pagination-bullets {
   right: 10px;

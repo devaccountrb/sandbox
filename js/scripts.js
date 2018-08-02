@@ -14,6 +14,7 @@ document.querySelector('.hamburger2').onclick = function() {
   document.querySelector('.hamburger2').classList.toggle('is-active2');
   document.querySelector('.navbar__menu').classList.toggle('navbar__menu--mobile');
 }
+
 /*BEGIN выпадающие меню верхнего блока*/
 $('.select__list').click(function(){
 $(this).toggleClass('open');
@@ -28,3 +29,36 @@ var setLang = $('.select__list').data('location'),
 })
 /*END выпадающие меню верхнего блока*/
 
+/*------SLICK--------*/
+
+ $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: false,
+  autoplay: false
+});
+ $('.slider-for2').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: false,
+  autoplay: false
+});
+
+/*-----end SLICK-----*/
+
+/*BEGIN SCROLL to top*/
+$(function() {
+	$(window).scroll(function() {
+		if($(this).scrollTop() != 0) {
+		$('#toTop').fadeIn();
+		} else {
+		$('#toTop').fadeOut();
+		}
+	});
+	$('#toTop').click(function() {
+		$('body,html').animate({scrollTop:0},500);
+	});
+});
+/*END SCROLL to top*/
