@@ -921,7 +921,7 @@ input::-webkit-search-results-decoration { display: none; }
   	padding-bottom: 25px;
 }
 @media (min-width: 1024px) {
-	.item--banner, .container--pc {
+	.item--banner {
 		display: block;
 	}
 }
